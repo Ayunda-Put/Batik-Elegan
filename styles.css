@@ -1,0 +1,448 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("images/back.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Style dasar untuk navbar */
+.navbar {
+background-color: rgba(0, 0, 0, 0.6); /* Warna transparan gelap */
+padding: 0.5rem 1rem; /* Ukuran padding lebih kecil */
+transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+font-size: 0.9rem; /* Ukuran font lebih kecil */
+border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Garis bawah tipis */
+}
+
+/* Hilangkan border bawah dan tambahkan padding */
+.navbar-dark {
+border-bottom: none;
+padding: 10px 0;
+}
+
+/* Tombol di link */
+.nav-link.btn {
+margin: 0 5px;
+padding: 5px 15px;
+border-radius: 20px; /* Tombol bulat */
+font-size: 0.9rem;
+}
+
+/* Navbar akan menghilang saat scroll */
+.disappearing-navbar {
+top: 0;
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #f8f9fa !important;
+}
+.nav-link {
+    font-family: 'Poppins', sans-serif; /* Font menarik (contoh: Poppins) */
+    font-size: 1rem; /* Ukuran font */
+    letter-spacing: 1px; /* Spasi antar huruf */
+    text-transform: uppercase; /* Huruf kapital */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Efek transisi */
+}
+.nav-link:hover {
+    color: #FFD700; /* Warna teks saat hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang saat hover */
+}
+.section-title {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+}
+section {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.section-content {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #444;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 0;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+#about .img-container {
+flex: 1 1 calc(50% - 10px); /* Membagi dua ruang dengan jarak */
+margin: 5px; /* Jarak antar gambar */
+position: relative;
+}
+
+#about .img-container img {
+width: 100%; /* Gambar mengikuti lebar kontainer */
+height: auto; /* Menjaga rasio gambar */
+border-radius: 8px; /* Memberikan efek sudut membulat */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+@media (max-width: 768px) {
+#about .img-container {
+flex: 1 1 100%; /* Gambar menjadi satu kolom pada perangkat kecil */
+}
+}
+
+.hero-section {
+padding: 50px 0;
+text-align: center;
+}
+
+.image-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.center-image {
+max-width: 100%;
+height: auto;
+}
+
+.hero-description {
+font-size: 1.25rem;
+color: #333;
+margin-top: 10px;
+}
+
+/* Gaya untuk section */
+#vision {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Gaya judul section */
+#vision .section-title {
+    font-family: 'Playfair Display', serif; /* Font elegan untuk judul */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8B4513; /* Warna cokelat elegan */
+    text-transform: uppercase;
+}
+
+/* Gaya judul card */
+#vision .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #8B0000; /* Warna merah gelap */
+}
+
+/* Gaya teks isi */
+#vision .card-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #4B4B4B; /* Warna abu-abu gelap */
+}
+
+/* Gaya untuk bullet list */
+#vision .card-text ul {
+    padding-left: 20px;
+}
+
+/* Gaya untuk list item */
+#vision .card-text li {
+    margin-bottom: 10px;
+}
+
+/* Transisi halus pada hover */
+#vision .card:hover {
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    transition: all 0.3s ease-in-out;
+}
+
+#services {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Gaya untuk judul utama section */
+#services .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:  #8B4513; /* Warna coklat lembut */
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* Gaya untuk subjudul */
+#services .indonesia-section h3, 
+#services .english-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3E2723; /* Warna coklat tua */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk judul card */
+#services .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #8B0000; /* Warna coklat medium */
+}
+
+/* Gaya untuk teks isi card */
+#services .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #4B4B4B; /* Warna abu-abu gelap */
+}
+
+/* Efek hover untuk card */
+#services .card {
+    background-color: #FFFFFF; /* Warna latar putih untuk kontras */
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    padding: 20px;
+}
+
+#services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih tebal saat hover */
+}
+
+/* Latar belakang samar untuk Bahasa Indonesia */
+.indonesia-section {
+    background-color: rgba(255, 250, 240, 0.8); /* Latar krem samar */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Latar belakang samar untuk Bahasa Inggris */
+.english-section {
+    background-color: rgba(240, 255, 250, 0.8); /* Latar hijau pucat samar */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#portfolio {
+padding: 40px 20px;
+background-color: #f9f9f9;
+}
+
+#portfolio .container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+#portfolio .section-title {
+font-size: 2rem;
+text-align: center;
+margin-bottom: 30px;
+color: #333;
+}
+
+#portfolio .portfolio-section {
+margin-bottom: 40px;
+}
+
+#portfolio .section-content {
+font-size: 1.5rem;
+text-align: center;
+margin-bottom: 20px;
+color: #555;
+}
+
+#portfolio .portfolio-gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+
+#portfolio .img-container {
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .img-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+
+}
+
+
+#contoh {
+padding: 50px 20px;
+background-color: #f9f9f9;
+font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.section-title {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.section-content {
+font-size: 1rem;
+margin-top: 15px;
+text-align: center;
+}
+
+#contoh .contoh-gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 5px;/* Jarak antar item */
+}
+
+#contoh .contoh-item {
+display: flex;
+flex-direction: column; /* Atur tata letak vertikal */
+align-items: center; /* Pusatkan gambar dan teks secara horizontal */
+text-align: center; /* Rata tengah teks */
+max-width: 500px; /* Opsional, batasi lebar item */
+}
+
+#contoh .img-container {
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+width: 200px; /* Atur ukuran container sesuai kebutuhan */
+height: 200px; /* Pastikan ukuran ini sesuai gambar */
+border-radius: 10px; /* Opsional, tambahkan efek rounded */
+margin-bottom: 5px; /* Jarak antara gambar dan teks */
+}
+
+#contoh .img-container img {
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+display: block;
+
+}
+
+#contoh {
+    background-color: #f5f5dc; /* Warna krem */
+    padding: 20px;
+}
+
+#contoh .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contoh .contoh-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#contoh .contoh-item {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 2px solid #8b4513; /* Border coklat */
+}
+
+#contoh .img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#contoh .section-content {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+/* Penutup Section */
+#penutup {
+background: linear-gradient(to bottom, #f5f5dc, #d2b48c); /* Cream ke coklat */
+color: #333; /* Warna teks tetap kontras */
+padding: 20px;
+text-align: center;
+}
+
+#penutup .title {
+font-size: 2rem;
+color: #333; /* Warna coklat lebih gelap untuk judul */
+}
+
+#penutup .quote {
+font-style: italic;
+color: #6b4226; /* Warna coklat sedang untuk kutipan */
+}
+
+#penutup .commitment {
+margin-top: 15px;
+font-size: 1rem;
+color: #4b3621; /* Coklat gelap */
+}
+
+#penutup .contact {
+margin-top: 20px;
+font-size: 1rem;
+}
+
+#penutup .email {
+font-weight: bold;
+color: black; /* Warna merah gelap agar menonjol */
+}
+
+/* Tambahkan font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+.img-container {
+flex: 1 1 calc(50% - 20px); /* 2 gambar per baris di layar kecil */
+}
+}
+
+@media (max-width: 480px) {
+.img-container {
+flex: 1 1 100%; /* 1 gambar per baris di layar sangat kecil */
+}
+}
